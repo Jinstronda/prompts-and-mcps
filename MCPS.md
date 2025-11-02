@@ -1,50 +1,50 @@
 {
   "mcpServers": {
-    "supabase": {
-      "command": "npx",
-      "args": [
-        "@supabase/mcp-server-supabase@latest",
-        "--access-token",
-        "YOUR_SUPABASE_ACCESS_TOKEN"
-      ]
-    },
-    "puppeteer": {
-      "command": "npx",
-      "args": ["@modelcontextprotocol/server-puppeteer@latest"]
-    },
     "sequentialThinking": {
       "command": "npx",
-      "args": ["@modelcontextprotocol/server-sequential-thinking@latest"]
-    },
-    "context7": {
-      "command": "npx",
-      "args": ["@upstash/context7-mcp@latest"]
-    },
-    "desktop-commander": {
-      "command": "npx",
-      "args": ["@wonderwhy-er/desktop-commander@latest"]
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-sequential-thinking"
+      ]
     },
     "playwright": {
       "command": "npx",
-      "args": ["@playwright/mcp@latest"]
+      "args": [
+        "-y",
+        "@playwright/mcp@latest"
+      ]
     },
-    "svelte": {
+    "context7": {
       "command": "npx",
-      "args": ["-y", "@sveltejs/mcp@latest"]
+      "args": [
+        "-y",
+        "@upstash/context7-mcp"
+      ],
+      "env": {}
     },
-    "figma": {
-      "url": "https://mcp.figma.com/mcp"
+    "desktop-commander": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@wonderwhy-er/desktop-commander@latest"
+      ],
+      "env": {}
     },
-    "figma-desktop": {
-      "url": "http://127.0.0.1:3845/mcp"
-    },
-
     "github": {
-      "type": "http",
       "url": "https://api.githubcopilot.com/mcp/",
       "headers": {
-        "Authorization": "Bearer YOUR_GITHUB_PERSONAL_ACCESS_TOKEN"
+        "Authorization": "YOUR_GITHUB_TOKEN_HERE"
       }
+    },
+    "Neon": {
+      "url": "https://mcp.neon.tech/mcp",
+      "headers": {}
+    },
+    "chrome-devtools": {
+      "command": "npx",
+      "args": [
+        "chrome-devtools-mcp@latest"
+      ]
     }
   }
 }

@@ -1,0 +1,40 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__context7__resolve-library-id",
+      "WebSearch",
+      "mcp__context7__get-library-docs",
+      "Bash(python:*)",
+      "Bash(uv run python:*)",
+      "Bash(nul)",
+      "Bash(more:*)",
+      "Bash(findstr:*)",
+      "Bash(cat:*)",
+      "mcp__sequentialThinking__sequentialthinking",
+      "WebFetch(domain:tinker-docs.thinkingmachines.ai)",
+      "WebFetch(domain:github.com)",
+      "mcp__desktop-commander__list_directory",
+      "mcp__desktop-commander__read_file",
+      "mcp__desktop-commander__start_search"
+    ],
+    "deny": [],
+    "ask": []
+  },
+  "enableAllProjectMcpServers": true,
+  "enabledMcpjsonServers": [
+    "context7",
+    "playwright",
+    "chrome-devtools",
+    "firecrawl",
+    "memory",
+    "sequential-thinking",
+    "magic",
+    "neon",
+    "vercel",
+    "cloudflare-docs",
+    "cloudflare-workers-builds",
+    "cloudflare-workers-bindings",
+    "cloudflare-observability",
+    "clickhouse"
+  ]
+}
